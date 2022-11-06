@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery learn </title>
+   <!-- sing  download jquery file    --> 
+<script src="jquery.js"></script>
+
+<!-- using cdn 
+   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+   --> 
+</head>
+<body>
+   
+    <p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+<button>Click me to hide paragraphs</button>
+
+<p id="p1">Enter this paragraph.</p>
+
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+
+<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button>
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+.......................................
+
+/* this is done by javascript
+var para1=document.getElementById('para1');
+para1.innerHTML="change para1 text";
+
+
+ with jquery
+ $('#para1').html('change para1 text'); // change text
+
+hide content
+  $('#para1').hide();
+
+ $('div').html('all div element content change');
+
+$("#hide").click(function()
+{
+    $("p").hide();
+});
+
+$("#show").click(function()
+{
+    $("p").show();
+});
+
+$(document).ready(function()
+{
+    $("p").click(function()
+    {
+        $(this).hide();
+    })
+})
+
+
+$("button").click(function()
+{
+    $("p:first").hide();
+})
+
+$("#p1").mouseenter(function()
+{
+    alert("enter into p");
+})
+
+$("#p1").mouseleave(function(){
+    alert("Bye! You now leave p1!");
+  });
+
+ $("input").focus(function()
+ {
+    $(this).css("background-color","yellow");
+ })
+ $("input").blur(function()
+ {
+    $(this).css("background-color","cyan");
+ })
+   */
+  $("#btn1").click(function()
+  {
+    alert("text is"  +$("#test").text() )
+  })
+
+
+ $("#btn2").click(function()
+ {
+    alert($("#test").html())
+ })
+
+ 
